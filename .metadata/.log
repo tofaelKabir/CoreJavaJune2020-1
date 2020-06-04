@@ -1,0 +1,1866 @@
+!SESSION 2020-05-10 22:56:22.461 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200305-0155
+java.version=14.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2020-05-10 22:57:03.811
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [270]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [287]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [57]
+                Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2020-05-10 22:57:03.824
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [272]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [270]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [287]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+                     org.apache.xmlrpc [57]
+                       Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2020-05-10 22:57:03.831
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [287]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2020-05-10 22:57:22.329
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2020-05-10 22:57:22.329
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-05-10 22:57:46.313
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\msr49'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-05-11 17:17:41.034 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200305-0155
+java.version=14.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2020-05-11 17:17:44.692
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [270]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [287]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2020-05-11 17:17:44.700
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [272]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [270]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [57]
+                Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [287]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2020-05-11 17:17:44.722
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [287]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2020-05-11 17:18:01.255
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2020-05-11 17:18:01.255
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-05-11 17:18:08.762
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\msr49'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-05-11 17:24:15.047 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200305-0155
+java.version=14.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2020-05-11 17:24:15.940
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [270]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [287]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2020-05-11 17:24:15.948
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [272]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [270]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [57]
+                Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [287]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2020-05-11 17:24:15.954
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [287]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2020-05-11 17:24:22.151
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2020-05-11 17:24:22.151
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-05-11 17:24:28.409
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\msr49'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 4 2 2020-05-12 04:48:15.291
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.e4.ui.workbench".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.getCurrentState(LegacyHandlerService.java:572)
+	at org.eclipse.egit.ui.internal.selection.SelectionUtils.getEvaluationContext(SelectionUtils.java:533)
+	at org.eclipse.egit.ui.internal.selection.SelectionUtils.getStructuredSelection(SelectionUtils.java:237)
+	at org.eclipse.egit.ui.internal.selection.RepositorySourceProvider.selectionChanged(RepositorySourceProvider.java:90)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.notifyListeners(SelectionService.java:240)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.handleSelectionChanged(SelectionService.java:94)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.lambda$0(SelectionService.java:68)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$1.run(SelectionAggregator.java:123)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.notifyListeners(SelectionAggregator.java:120)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.access$2(SelectionAggregator.java:118)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$5.lambda$0(SelectionAggregator.java:220)
+	at org.eclipse.e4.core.contexts.RunAndTrack.runExternalCode(RunAndTrack.java:59)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$5.changed(SelectionAggregator.java:220)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:108)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.runAndTrack(EclipseContext.java:346)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.track(SelectionAggregator.java:205)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.setPart(SelectionAggregator.java:114)
+	at jdk.internal.reflect.GeneratedMethodAccessor48.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:95)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.processScheduled(EclipseContext.java:364)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:188)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.clearContext(PartRenderingEngine.java:993)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:966)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.disposeWidget(ContributedPartRenderer.java:261)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:945)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:115)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:945)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:900)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:2117)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1748)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$3(WorkbenchWindow.java:1773)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1773)
+	at org.eclipse.ui.internal.Workbench$11.run(Workbench.java:1142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1125)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1426)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1426)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1402)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1744)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$3(WorkbenchWindow.java:1773)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1773)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1782)
+	at org.eclipse.ui.internal.WorkbenchWindow$3.close(WorkbenchWindow.java:523)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:578)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1046)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1552)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4720)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:335)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2100)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4749)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4819)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:335)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2100)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4749)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4819)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:335)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2100)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4749)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3522)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2020-05-12 04:48:15.300
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.getCurrentState(LegacyHandlerService.java:572)
+	at org.eclipse.egit.ui.internal.selection.SelectionUtils.getEvaluationContext(SelectionUtils.java:533)
+	at org.eclipse.egit.ui.internal.selection.SelectionUtils.getStructuredSelection(SelectionUtils.java:237)
+	at org.eclipse.egit.ui.internal.selection.RepositorySourceProvider.selectionChanged(RepositorySourceProvider.java:90)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.notifyListeners(SelectionService.java:240)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.handleSelectionChanged(SelectionService.java:94)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.lambda$0(SelectionService.java:68)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$1.run(SelectionAggregator.java:123)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.notifyListeners(SelectionAggregator.java:120)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.access$2(SelectionAggregator.java:118)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$5.lambda$0(SelectionAggregator.java:220)
+	at org.eclipse.e4.core.contexts.RunAndTrack.runExternalCode(RunAndTrack.java:59)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$5.changed(SelectionAggregator.java:220)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:108)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.runAndTrack(EclipseContext.java:346)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.track(SelectionAggregator.java:205)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.setPart(SelectionAggregator.java:114)
+	at jdk.internal.reflect.GeneratedMethodAccessor48.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:95)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.processScheduled(EclipseContext.java:364)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:188)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.clearContext(PartRenderingEngine.java:993)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:966)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.disposeWidget(ContributedPartRenderer.java:261)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:945)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:115)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:945)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:900)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:2117)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1748)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$3(WorkbenchWindow.java:1773)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1773)
+	at org.eclipse.ui.internal.Workbench$11.run(Workbench.java:1142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1125)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1426)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1426)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1402)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1744)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$3(WorkbenchWindow.java:1773)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1773)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1782)
+	at org.eclipse.ui.internal.WorkbenchWindow$3.close(WorkbenchWindow.java:523)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:578)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1046)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1552)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4720)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:335)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2100)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4749)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4819)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:335)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2100)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4749)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4819)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:335)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2100)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4749)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3522)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+!SESSION 2020-05-12 17:16:06.069 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200305-0155
+java.version=14.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2020-05-12 17:16:08.718
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [270]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [287]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2020-05-12 17:16:08.724
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [272]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [270]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [57]
+                Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [287]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2020-05-12 17:16:08.749
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [287]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2020-05-12 17:16:20.620
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2020-05-12 17:16:20.621
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-05-12 17:16:25.883
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\msr49'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-05-12 17:28:12.409
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.getChar(AbstractDocument.java:782)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getChar(SynchronizableDocument.java:141)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getBracketHoverInfo(JavaSourceHover.java:179)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo(JavaSourceHover.java:140)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo2(JavaSourceHover.java:120)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 2 2020-05-13 04:54:11.529
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.e4.ui.workbench".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.getCurrentState(LegacyHandlerService.java:572)
+	at org.eclipse.egit.ui.internal.selection.SelectionUtils.getEvaluationContext(SelectionUtils.java:533)
+	at org.eclipse.egit.ui.internal.selection.SelectionUtils.getStructuredSelection(SelectionUtils.java:237)
+	at org.eclipse.egit.ui.internal.selection.RepositorySourceProvider.selectionChanged(RepositorySourceProvider.java:90)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.notifyListeners(SelectionService.java:240)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.handleSelectionChanged(SelectionService.java:94)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.lambda$0(SelectionService.java:68)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$1.run(SelectionAggregator.java:123)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.notifyListeners(SelectionAggregator.java:120)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.access$2(SelectionAggregator.java:118)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$5.lambda$0(SelectionAggregator.java:220)
+	at org.eclipse.e4.core.contexts.RunAndTrack.runExternalCode(RunAndTrack.java:59)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$5.changed(SelectionAggregator.java:220)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:108)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.runAndTrack(EclipseContext.java:346)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.track(SelectionAggregator.java:205)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.setPart(SelectionAggregator.java:114)
+	at jdk.internal.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:95)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.processScheduled(EclipseContext.java:364)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:188)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.clearContext(PartRenderingEngine.java:993)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:966)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:115)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:945)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:900)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:2117)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1748)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$3(WorkbenchWindow.java:1773)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1773)
+	at org.eclipse.ui.internal.Workbench$11.run(Workbench.java:1142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1125)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1426)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1426)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1402)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1744)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$3(WorkbenchWindow.java:1773)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1773)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1782)
+	at org.eclipse.ui.internal.WorkbenchWindow$3.close(WorkbenchWindow.java:523)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:578)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1046)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1552)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4720)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:335)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2100)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4749)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4819)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:335)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2100)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4749)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4819)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:335)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2100)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4749)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3522)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2020-05-13 04:54:11.540
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.getCurrentState(LegacyHandlerService.java:572)
+	at org.eclipse.egit.ui.internal.selection.SelectionUtils.getEvaluationContext(SelectionUtils.java:533)
+	at org.eclipse.egit.ui.internal.selection.SelectionUtils.getStructuredSelection(SelectionUtils.java:237)
+	at org.eclipse.egit.ui.internal.selection.RepositorySourceProvider.selectionChanged(RepositorySourceProvider.java:90)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.notifyListeners(SelectionService.java:240)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.handleSelectionChanged(SelectionService.java:94)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.lambda$0(SelectionService.java:68)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$1.run(SelectionAggregator.java:123)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.notifyListeners(SelectionAggregator.java:120)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.access$2(SelectionAggregator.java:118)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$5.lambda$0(SelectionAggregator.java:220)
+	at org.eclipse.e4.core.contexts.RunAndTrack.runExternalCode(RunAndTrack.java:59)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$5.changed(SelectionAggregator.java:220)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:108)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.runAndTrack(EclipseContext.java:346)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.track(SelectionAggregator.java:205)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.setPart(SelectionAggregator.java:114)
+	at jdk.internal.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:95)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.processScheduled(EclipseContext.java:364)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:188)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.clearContext(PartRenderingEngine.java:993)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:966)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:115)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:945)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:900)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:2117)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1748)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$3(WorkbenchWindow.java:1773)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1773)
+	at org.eclipse.ui.internal.Workbench$11.run(Workbench.java:1142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1125)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1426)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1426)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1402)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1744)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$3(WorkbenchWindow.java:1773)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1773)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1782)
+	at org.eclipse.ui.internal.WorkbenchWindow$3.close(WorkbenchWindow.java:523)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:578)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1046)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1552)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4720)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:335)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2100)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4749)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4819)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:335)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2100)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4749)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4819)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:335)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2100)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4749)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3522)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+!SESSION 2020-05-13 19:06:49.106 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200305-0155
+java.version=14.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2020-05-13 19:07:10.655
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [270]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [287]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [57]
+                Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2020-05-13 19:07:10.672
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [272]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [270]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [287]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+                     org.apache.xmlrpc [57]
+                       Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2020-05-13 19:07:10.822
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [287]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2020-05-13 19:07:45.810
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2020-05-13 19:07:45.810
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-05-13 19:07:53.576
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\msr49'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-05-13 19:35:17.868 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200305-0155
+java.version=14.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2020-05-13 19:35:19.155
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [270]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [287]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2020-05-13 19:35:19.186
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [272]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [270]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [57]
+                Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [287]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2020-05-13 19:35:19.198
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [287]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2020-05-13 19:35:25.478
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2020-05-13 19:35:25.478
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-05-13 19:35:29.825
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\msr49'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 4 2 2020-05-14 04:53:53.660
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.e4.ui.workbench".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.getCurrentState(LegacyHandlerService.java:572)
+	at org.eclipse.egit.ui.internal.selection.SelectionUtils.getEvaluationContext(SelectionUtils.java:533)
+	at org.eclipse.egit.ui.internal.selection.SelectionUtils.getStructuredSelection(SelectionUtils.java:237)
+	at org.eclipse.egit.ui.internal.selection.RepositorySourceProvider.selectionChanged(RepositorySourceProvider.java:90)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.notifyListeners(SelectionService.java:240)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.handleSelectionChanged(SelectionService.java:94)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.lambda$0(SelectionService.java:68)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$1.run(SelectionAggregator.java:123)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.notifyListeners(SelectionAggregator.java:120)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.access$2(SelectionAggregator.java:118)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$5.lambda$0(SelectionAggregator.java:220)
+	at org.eclipse.e4.core.contexts.RunAndTrack.runExternalCode(RunAndTrack.java:59)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$5.changed(SelectionAggregator.java:220)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:108)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.runAndTrack(EclipseContext.java:346)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.track(SelectionAggregator.java:205)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.setPart(SelectionAggregator.java:114)
+	at jdk.internal.reflect.GeneratedMethodAccessor47.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:95)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.processScheduled(EclipseContext.java:364)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:188)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.clearContext(PartRenderingEngine.java:993)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:966)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.disposeWidget(ContributedPartRenderer.java:261)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:945)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:115)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:945)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:900)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:2117)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1748)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$3(WorkbenchWindow.java:1773)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1773)
+	at org.eclipse.ui.internal.Workbench$11.run(Workbench.java:1142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1125)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1426)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1426)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1402)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1744)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$3(WorkbenchWindow.java:1773)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1773)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1782)
+	at org.eclipse.ui.internal.WorkbenchWindow$3.close(WorkbenchWindow.java:523)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:578)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1046)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1552)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4720)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:335)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2100)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4749)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4819)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:335)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2100)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4749)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4819)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:335)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2100)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4749)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3522)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2020-05-14 04:53:53.667
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.getCurrentState(LegacyHandlerService.java:572)
+	at org.eclipse.egit.ui.internal.selection.SelectionUtils.getEvaluationContext(SelectionUtils.java:533)
+	at org.eclipse.egit.ui.internal.selection.SelectionUtils.getStructuredSelection(SelectionUtils.java:237)
+	at org.eclipse.egit.ui.internal.selection.RepositorySourceProvider.selectionChanged(RepositorySourceProvider.java:90)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.notifyListeners(SelectionService.java:240)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.handleSelectionChanged(SelectionService.java:94)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.lambda$0(SelectionService.java:68)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$1.run(SelectionAggregator.java:123)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.notifyListeners(SelectionAggregator.java:120)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.access$2(SelectionAggregator.java:118)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$5.lambda$0(SelectionAggregator.java:220)
+	at org.eclipse.e4.core.contexts.RunAndTrack.runExternalCode(RunAndTrack.java:59)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$5.changed(SelectionAggregator.java:220)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:108)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.runAndTrack(EclipseContext.java:346)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.track(SelectionAggregator.java:205)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.setPart(SelectionAggregator.java:114)
+	at jdk.internal.reflect.GeneratedMethodAccessor47.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:95)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.processScheduled(EclipseContext.java:364)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:188)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.clearContext(PartRenderingEngine.java:993)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:966)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.disposeWidget(ContributedPartRenderer.java:261)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:945)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:115)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:945)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:900)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:907)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:2117)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1748)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$3(WorkbenchWindow.java:1773)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1773)
+	at org.eclipse.ui.internal.Workbench$11.run(Workbench.java:1142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1125)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1426)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1426)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1402)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1744)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$3(WorkbenchWindow.java:1773)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1773)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1782)
+	at org.eclipse.ui.internal.WorkbenchWindow$3.close(WorkbenchWindow.java:523)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:578)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1046)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1552)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4720)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:335)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2100)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4749)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4819)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:335)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2100)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4749)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4819)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:335)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2100)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4749)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3522)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+!SESSION 2020-05-14 17:41:25.625 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200305-0155
+java.version=14.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2020-05-14 17:41:31.146
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [270]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [287]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2020-05-14 17:41:31.152
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [272]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [270]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [57]
+                Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [287]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2020-05-14 17:41:31.174
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [287]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2020-05-14 17:41:56.337
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2020-05-14 17:41:56.337
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-05-14 17:42:05.774
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\msr49'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-05-30 18:29:46.834 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200305-0155
+java.version=14.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2020-05-30 18:30:13.584
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [270]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [287]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [57]
+                Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2020-05-30 18:30:13.598
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [272]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [270]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [287]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+                     org.apache.xmlrpc [57]
+                       Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2020-05-30 18:30:13.785
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [287]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2020-05-30 18:31:16.757
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2020-05-30 18:31:16.757
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-05-30 18:31:36.496
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\msr49'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-05-31 20:06:53.599 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200305-0155
+java.version=14.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2020-05-31 20:06:57.064
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [270]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [287]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2020-05-31 20:06:57.072
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [272]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [270]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [57]
+                Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [287]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2020-05-31 20:06:57.088
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [287]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2020-05-31 20:07:13.779
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2020-05-31 20:07:13.779
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-05-31 20:07:21.031
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\msr49'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-06-01 21:46:57.914 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200305-0155
+java.version=14.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2020-06-01 21:47:01.271
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [270]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [287]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2020-06-01 21:47:01.277
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [272]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [270]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [57]
+                Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [287]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2020-06-01 21:47:01.282
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [287]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2020-06-01 21:47:48.835
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2020-06-01 21:47:48.835
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-01 21:47:54.628
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\msr49'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

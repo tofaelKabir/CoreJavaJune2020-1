@@ -1,0 +1,12 @@
+package javBasicsShamim;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+//will practice multiple line print
+		System.out.println("this is my first project");
+		System.out.print("i am practicing next line print");
+		System.out.println("2 lines will print together");
+	}
+
+}
