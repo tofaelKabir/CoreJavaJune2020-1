@@ -28,8 +28,6 @@ public class My_info {
 		
 		System.out.println("\"shamim\"");
 		System.out.println("\'SHAMIM\'");
-		
-		// i am testing github for a new push
 	}
 
 }
