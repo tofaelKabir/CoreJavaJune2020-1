@@ -30,7 +30,6 @@ public class My_info {
 		System.out.println("\'SHAMIM\'");
 		
 		// i am testing github for a new push
-		// refreshed all folders and kept 2 for practice
 	}
 
 }
