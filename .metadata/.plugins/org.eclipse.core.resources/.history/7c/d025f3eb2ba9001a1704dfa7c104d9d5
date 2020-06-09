@@ -1,0 +1,24 @@
+package variableAndMethods;
+
+import jdk.internal.agent.resources.agent;
+
+public class Address03 { //Opening of Class body
+
+	// Class body
+	//CLass body contains--
+	
+	//Variables - declared or initialized
+	//COnstructor -- "same as above"
+	//method -- implemented / initialized - 
+	//in class method is not declared like variables and constructor
+	
+	static String Name = "Shamim"; //String inside double quotation
+	int age = 44; //without Q
+	char sex = 'M'; //inside single Q
+	double grade = 3.876; //inside double 
+	
+	public static void main(String[] args) {
+		System.out.println(Name);  //a non static variable cannot initialize under a static method
+	}
+
+}  //Closing of class body

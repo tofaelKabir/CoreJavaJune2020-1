@@ -11,8 +11,8 @@ public class My_info {
 		System.out.println("my name is Shamim Rahman");
 		System.out.println("my address is :");
 		System.out.print("505 Benton Drive");
-		System.out.print("\nAllen");
-		System.out.println("\tTX 75013");
+		System.out.print("\nAllen, ");
+		System.out.println("TX 75013");
 		
 		System.out.print("my phone number is:");
 		System.out.println("\t3475925234");
