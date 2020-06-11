@@ -1,16 +1,19 @@
 package variableAndMethods;
 
+public class Address03 {
 
-public class Address03 { //Opening of Class body
-
-
-	static String Name = "Shamim"; //String inside double quotation
-	static int age = 44; //without Q
-	static char sex = 'M'; //inside single Q
-	static double grade = 3.876; //inside double 
-	
 	public static void main(String[] args) {
-System.out.println("S");		
+
+
+		String Name = "Shamim";
+		int age = 43;
+		char sex = 'M';
+		double gpa = 3.23;
+		
+		System.out.println(Name);
+		System.out.println(age);
+		System.out.println(sex);
+		System.out.println(gpa);
 	}
 
-}  //Closing of class body
+}

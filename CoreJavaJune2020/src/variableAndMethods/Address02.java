@@ -1,27 +1,16 @@
 package variableAndMethods;
 
 
-public class Address02 { //Opening of Class body
-
-	// Class body
-	//CLass body contains--
+public class Address02 {
+public static void main(String[] args) {
 	
-	//Variables - declared or initialized
-	//COnstructor -- "same as above"
-	//method -- implemented / initialized - 
-	//in class method is not declared like variables and constructor
+	String Name = "Shamim";
+	int age = 43;
+	char sex = 'M';
+	double gpa = 3.23;
 	
-	static String Name = "Shamim"; //String inside double quotation
-	static int age = 44; //without Q
-	static char sex = 'M'; //inside single Q
-	static double grade = 3.876; //inside double 
+	System.out.println(Name);
 	
-	public static void main(String[] args) {
-		System.out.println(Name);  //a non static variable cannot initialize under a static method
-		System.out.println(age);
-		System.out.println(sex);
-		System.out.println(grade);
-		
-	}
-
-}  //Closing of class body
+	
+}
+}

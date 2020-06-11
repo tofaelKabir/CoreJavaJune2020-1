@@ -1,0 +1,16 @@
+package variableAndMethods;
+
+public class Address04 {
+
+
+		String Name = "Shamim";
+		int age = 43;
+		char sex = 'M';
+		double gpa = 3.23;
+		
+		public static void main(String[] args) {
+			System.out.println(Name+age+sex+gpa);
+		}
+	
+
+}
