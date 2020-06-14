@@ -1,0 +1,9 @@
+
+public class Student01 {
+	
+	int id = 99;
+	
+	public static void main(String[] args) {
+		System.out.println("My ID: +id +");
+	}
+}

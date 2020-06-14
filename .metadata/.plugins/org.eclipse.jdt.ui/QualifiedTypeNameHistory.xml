@@ -8,4 +8,5 @@
     <fullyQualifiedTypeName name="jdk.internal.agent.resources.agent"/>
     <fullyQualifiedTypeName name="java.lang.Boolean"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="sun.jvm.hotspot.runtime.StaticBaseConstructor"/>
 </qualifiedTypeNameHistroy>
