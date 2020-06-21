@@ -6,8 +6,8 @@ public class Practice {
     //addition 
 		int value1 = 5;
 		double value2 = 10.5;
-		double div = value2 / value1;
-		System.out.println("total value is "+div);
+		double mod = value2 % value1;
+		System.out.println("total percentage is "+mod);
 		
 	}
 

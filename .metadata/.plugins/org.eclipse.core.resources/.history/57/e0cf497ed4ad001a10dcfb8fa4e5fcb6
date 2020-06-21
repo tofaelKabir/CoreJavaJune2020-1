@@ -1,8 +1,0 @@
-
-public class Employee01 {
-
-	String Name = "Shamim";
-	int id = 99;
-	
-	
-}
