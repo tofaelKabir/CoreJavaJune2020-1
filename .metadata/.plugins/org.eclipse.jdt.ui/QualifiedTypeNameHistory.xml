@@ -7,10 +7,20 @@
     <fullyQualifiedTypeName name="jdk.internal.agent.resources.agent"/>
     <fullyQualifiedTypeName name="java.lang.Boolean"/>
     <fullyQualifiedTypeName name="sun.jvm.hotspot.runtime.StaticBaseConstructor"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="inheritance.GrandFather"/>
     <fullyQualifiedTypeName name="inheritance.Father"/>
     <fullyQualifiedTypeName name="variableAndMethods.NewAddress"/>
     <fullyQualifiedTypeName name="hw3Q3Inheritance01.Mammal"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="javaConstructor.Employee"/>
     <fullyQualifiedTypeName name="com.sun.tools.sjavac.comp.dependencies.PublicApiCollector"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="oop_inheritance.MyGrandfather"/>
+    <fullyQualifiedTypeName name="oop_inheritance.Me"/>
+    <fullyQualifiedTypeName name="oop_inheritance.MyAunt"/>
+    <fullyQualifiedTypeName name="oop_inheritance.MyFather"/>
+    <fullyQualifiedTypeName name="oop_inheritance.MySister"/>
+    <fullyQualifiedTypeName name="oop_inheritance.MyNephew"/>
+    <fullyQualifiedTypeName name="oop_inheritance.MySon"/>
+    <fullyQualifiedTypeName name="com.sun.beans.introspect.PropertyInfo.Name"/>
 </qualifiedTypeNameHistroy>
