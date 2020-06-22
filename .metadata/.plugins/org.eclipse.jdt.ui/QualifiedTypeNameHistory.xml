@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="com.sun.tools.sjavac.comp.dependencies.PublicApiCollector"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="javBasicsShamim.My_info"/>
     <fullyQualifiedTypeName name="jdk.internal.agent.resources.agent"/>
@@ -12,4 +11,6 @@
     <fullyQualifiedTypeName name="inheritance.GrandFather"/>
     <fullyQualifiedTypeName name="inheritance.Father"/>
     <fullyQualifiedTypeName name="variableAndMethods.NewAddress"/>
+    <fullyQualifiedTypeName name="hw3Q3Inheritance01.Mammal"/>
+    <fullyQualifiedTypeName name="com.sun.tools.sjavac.comp.dependencies.PublicApiCollector"/>
 </qualifiedTypeNameHistroy>
