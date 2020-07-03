@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="javBasicsShamim.My_info"/>
-    <fullyQualifiedTypeName name="jdk.internal.agent.resources.agent"/>
     <fullyQualifiedTypeName name="java.lang.Boolean"/>
     <fullyQualifiedTypeName name="sun.jvm.hotspot.runtime.StaticBaseConstructor"/>
     <fullyQualifiedTypeName name="inheritance.GrandFather"/>
@@ -45,9 +44,10 @@
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
     <fullyQualifiedTypeName name="org.graalvm.compiler.virtual.phases.ea.PartialEscapeBlockState.Final"/>
     <fullyQualifiedTypeName name="javax.imageio.stream.FileCacheImageInputStream"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="sun.jvm.hotspot.oops.java_lang_Class"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="org.w3c.dom.css.ElementCSSInlineStyle"/>
     <fullyQualifiedTypeName name="sun.security.provider.JavaKeyStore.CaseExactJKS"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="jdk.internal.agent.resources.agent"/>
 </qualifiedTypeNameHistroy>
