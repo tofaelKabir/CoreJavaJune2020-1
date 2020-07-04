@@ -1,9 +1,7 @@
 package oop_abstraction;
 
-public class Taxi {
+public interface Taxi {
 	public void rent();
 	public void carryingpassenger();
 
-
-	
 }

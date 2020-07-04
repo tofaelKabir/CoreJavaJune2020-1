@@ -38,7 +38,6 @@
     <fullyQualifiedTypeName name="java.lang.Number"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="sun.security.util.Length"/>
-    <fullyQualifiedTypeName name="java.lang.Double"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
@@ -48,6 +47,11 @@
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="org.w3c.dom.css.ElementCSSInlineStyle"/>
     <fullyQualifiedTypeName name="sun.security.provider.JavaKeyStore.CaseExactJKS"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="jdk.internal.agent.resources.agent"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.launcher.Main"/>
+    <fullyQualifiedTypeName name="javax.sound.midi.VoiceStatus"/>
+    <fullyQualifiedTypeName name="javax.smartcardio.Card"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="FirstTest.MethodPractice"/>
 </qualifiedTypeNameHistroy>
