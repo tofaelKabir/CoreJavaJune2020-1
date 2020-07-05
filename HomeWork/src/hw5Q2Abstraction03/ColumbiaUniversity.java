@@ -1,4 +1,4 @@
-package hw3Q2Abstraction03;
+package hw5Q2Abstraction03;
 
 public class ColumbiaUniversity extends NYUniversity {
 	// extends keyword is used to inherit a regular class or an abstract class in regular class
