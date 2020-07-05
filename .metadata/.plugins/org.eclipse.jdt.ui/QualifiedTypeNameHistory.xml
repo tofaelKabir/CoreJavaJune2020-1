@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="javBasicsShamim.My_info"/>
-    <fullyQualifiedTypeName name="java.lang.Boolean"/>
     <fullyQualifiedTypeName name="sun.jvm.hotspot.runtime.StaticBaseConstructor"/>
     <fullyQualifiedTypeName name="inheritance.GrandFather"/>
     <fullyQualifiedTypeName name="inheritance.Father"/>
@@ -26,7 +23,6 @@
     <fullyQualifiedTypeName name="Java.oop_practice"/>
     <fullyQualifiedTypeName name="jdk.internal.jshell.tool.resources.l10n"/>
     <fullyQualifiedTypeName name="Java.more_oop_practice.smol_class"/>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="Java.more_oop_practice"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
@@ -44,15 +40,24 @@
     <fullyQualifiedTypeName name="org.graalvm.compiler.virtual.phases.ea.PartialEscapeBlockState.Final"/>
     <fullyQualifiedTypeName name="javax.imageio.stream.FileCacheImageInputStream"/>
     <fullyQualifiedTypeName name="sun.jvm.hotspot.oops.java_lang_Class"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="org.w3c.dom.css.ElementCSSInlineStyle"/>
     <fullyQualifiedTypeName name="sun.security.provider.JavaKeyStore.CaseExactJKS"/>
     <fullyQualifiedTypeName name="jdk.internal.agent.resources.agent"/>
     <fullyQualifiedTypeName name="java.lang.Double"/>
-    <fullyQualifiedTypeName name="com.sun.tools.javac.launcher.Main"/>
     <fullyQualifiedTypeName name="javax.sound.midi.VoiceStatus"/>
     <fullyQualifiedTypeName name="javax.smartcardio.Card"/>
     <fullyQualifiedTypeName name="FirstTest.MethodPractice"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="FirstTest.TestClass"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.launcher.Main"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="jdk.dynalink.StandardNamespace"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.hotspot.replacements.NewObjectSnippets"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.core.GraalCompilerOptions_OptionDescriptors"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="hw4Q3Constructor01.Student"/>
+    <fullyQualifiedTypeName name="hw5Q4UseOfSuper01.Father"/>
+    <fullyQualifiedTypeName name="hw5Q4UseOfSuper01.Son"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="hw5Q5Encapsulation01.Employee"/>
+    <fullyQualifiedTypeName name="com.sun.jdi.Method"/>
 </qualifiedTypeNameHistroy>
