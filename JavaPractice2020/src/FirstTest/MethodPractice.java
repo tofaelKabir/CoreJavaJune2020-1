@@ -1,7 +1,7 @@
 package FirstTest;
 
 
-public class MethodPractice {
+
 /*
 	static void practiceMethod() {
 		System.out.println("this is a test msg");
@@ -94,7 +94,7 @@ public static void main(String[] args) {
 	ttt.newPublicMethod();
 	ttt.secondMethod(500);
 }	
-	*/
+	
 
 		int classYear;
 		String classModel;
@@ -110,6 +110,35 @@ public static void main(String[] args) {
 		System.out.println(car.classYear + " " +  car.classModel);
 				
 	}
+	
+	
+	private String name;
+	
+	public String getName() {
+		
+		return name;
+	}
+	
+	public void setName(String newName) {
+		this.name = newName;
+		
+	}
+	*/
+public class MethodPractice {
+	String name = "Ayat";
+	
+	public void Home() {
+		System.out.println("who live in the house : "  + name);
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 

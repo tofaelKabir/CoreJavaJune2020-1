@@ -1,6 +1,5 @@
 package FirstTest;
 
-import java.math.*;
 
 
 public class MyClass {

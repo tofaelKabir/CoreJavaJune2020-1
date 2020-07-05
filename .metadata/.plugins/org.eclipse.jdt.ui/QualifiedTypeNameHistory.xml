@@ -52,6 +52,7 @@
     <fullyQualifiedTypeName name="com.sun.tools.javac.launcher.Main"/>
     <fullyQualifiedTypeName name="javax.sound.midi.VoiceStatus"/>
     <fullyQualifiedTypeName name="javax.smartcardio.Card"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="FirstTest.MethodPractice"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="FirstTest.TestClass"/>
 </qualifiedTypeNameHistroy>
