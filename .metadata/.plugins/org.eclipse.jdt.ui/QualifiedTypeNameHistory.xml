@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="sun.jvm.hotspot.runtime.StaticBaseConstructor"/>
-    <fullyQualifiedTypeName name="inheritance.GrandFather"/>
-    <fullyQualifiedTypeName name="inheritance.Father"/>
-    <fullyQualifiedTypeName name="variableAndMethods.NewAddress"/>
-    <fullyQualifiedTypeName name="hw3Q3Inheritance01.Mammal"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="javaConstructor.Employee"/>
-    <fullyQualifiedTypeName name="com.sun.tools.sjavac.comp.dependencies.PublicApiCollector"/>
     <fullyQualifiedTypeName name="oop_inheritance.MyGrandfather"/>
     <fullyQualifiedTypeName name="oop_inheritance.Me"/>
     <fullyQualifiedTypeName name="oop_inheritance.MyAunt"/>
@@ -57,7 +49,15 @@
     <fullyQualifiedTypeName name="hw4Q3Constructor01.Student"/>
     <fullyQualifiedTypeName name="hw5Q4UseOfSuper01.Father"/>
     <fullyQualifiedTypeName name="hw5Q4UseOfSuper01.Son"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="hw5Q5Encapsulation01.Employee"/>
     <fullyQualifiedTypeName name="com.sun.jdi.Method"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.hotspot.nodes.type.MethodCountersPointerStamp"/>
+    <fullyQualifiedTypeName name="sun.font.SunFontManager.FamilyDescription"/>
+    <fullyQualifiedTypeName name="FirstTest.JavaShamimClass"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="FirstTest.JavaWarithAyatClass"/>
+    <fullyQualifiedTypeName name="FirstTest.JavaAnimalClass"/>
+    <fullyQualifiedTypeName name="FirstTest.JavaCowClass"/>
+    <fullyQualifiedTypeName name="FirstTest.JavaAbsKabab"/>
+    <fullyQualifiedTypeName name="FirstTest.JavaAbsFood"/>
 </qualifiedTypeNameHistroy>
