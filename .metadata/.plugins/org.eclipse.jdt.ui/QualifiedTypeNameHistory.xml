@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="oop_inheritance.MyGrandfather"/>
-    <fullyQualifiedTypeName name="oop_inheritance.Me"/>
-    <fullyQualifiedTypeName name="oop_inheritance.MyAunt"/>
-    <fullyQualifiedTypeName name="oop_inheritance.MyFather"/>
-    <fullyQualifiedTypeName name="oop_inheritance.MySister"/>
-    <fullyQualifiedTypeName name="oop_inheritance.MyNephew"/>
-    <fullyQualifiedTypeName name="oop_inheritance.MySon"/>
-    <fullyQualifiedTypeName name="com.sun.beans.introspect.PropertyInfo.Name"/>
-    <fullyQualifiedTypeName name="javax.sql.rowset.CachedRowSet"/>
-    <fullyQualifiedTypeName name="sun.awt.www.content.audio.x_aiff"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="org.graalvm.compiler.core.common.type.ArithmeticOpTable.BinaryOp.Add"/>
     <fullyQualifiedTypeName name="Java.oop_practice"/>
@@ -60,4 +50,14 @@
     <fullyQualifiedTypeName name="FirstTest.JavaCowClass"/>
     <fullyQualifiedTypeName name="FirstTest.JavaAbsKabab"/>
     <fullyQualifiedTypeName name="FirstTest.JavaAbsFood"/>
+    <fullyQualifiedTypeName name="FirstTest.PrimaryClass"/>
+    <fullyQualifiedTypeName name="FirstTest.PrimaryClass.Innerclass"/>
+    <fullyQualifiedTypeName name="FirstTest.JavaInterfaceClass"/>
+    <fullyQualifiedTypeName name="FirstTest.PracticeIntClass"/>
+    <fullyQualifiedTypeName name="hw6Q2Abstraction04.ColumbiaUniversity"/>
+    <fullyQualifiedTypeName name="hw6Q2Abstraction04.RockefellerUniversity"/>
+    <fullyQualifiedTypeName name="hw6Q2Abstraction04.NursingSchool"/>
+    <fullyQualifiedTypeName name="hw6Q2Abstraction04.MedicalSchool"/>
+    <fullyQualifiedTypeName name="hw6Q2Abstraction04.University"/>
+    <fullyQualifiedTypeName name="hw6Q2Abstraction04.Hospital"/>
 </qualifiedTypeNameHistroy>
