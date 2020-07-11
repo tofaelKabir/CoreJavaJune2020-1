@@ -1,6 +1,6 @@
 package hw6Q2Abstraction04;
 
-public class ColumbiaUniversity extends NYUniversity {
+public class ColumbiaUniversity extends NYUniversity { //ColumbiaUniversity extends MedicalSchool implements University, where is the implementation?
 	// extends keyword is used to inherit a regular class or an abstract class in regular class
 	// here it extends a REGULAR class
 	// multiple inheritance is not possible by extends keyword in regular class
